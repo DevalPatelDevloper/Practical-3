@@ -1,0 +1,42 @@
+*{
+    margin: 5px;
+    padding: 0;
+}
+.main{
+    background: #f2f5f8;
+    color: #f8f2f2;
+    height: auto;
+    width: 290px;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid rgb(173, 173, 166);
+}
+input{
+    background: #b8bbbe;
+}
+
+.btn{
+    height: auto;
+    width: 46px;
+}
+
+#eql{
+    background: #9ec9e2;
+}
+option{
+    color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+/* media queries */
+@media (max-width:1000px){
+    html{
+        margin: 15px;
+        width: 250px;
+        height: auto;
+    }
+    
+}
