@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
+    <link rel="stylesheet" href="css/sty.css">
+</head>
+<body>
+   <div class="container">
+       <div class="col-md-12">
+           <form action="#" name="scientific" class="main" > 
+               <input type="text" class="display form-control" name="display" id="display">
+               <input type="button" class="btn ml-3" value="DEG" onclick="">
+               <input type="button" class="btn ml-3" value="F-E" onclick="fg()">
+               <input type="button" class="btn ml-3" value="">
+               <input type="button" class="btn ml-3" value="">
+               <input type="button" class="btn ml-3" value=""><br>
+          
+               <select name="Triginometry" id="Triginometry">
+                <option value="#">Trigno.</option>
+                <option value="sin" >sin</option>
+                <option value="cos">cos</option> 
+                <option value="tan">tan</option> 
+                <option value="hyp">hyp</option> 
+                <option value="sec">sec</option> 
+                <option value="csc">csc</option>
+                <option value="cot">cot</option>
+              </select> 
+              <select name="fn" id="fn">
+                <option value="#"><i class="fa-solid fa-function">Function</i></option>
+                <option value="miX">|x|</option>
+                <option value="rand">rand</option>
+              </select>
+               <input type="button" class="btn ml-3" value=""><br>
+               <input type="button" class="btn ml-3" value="MC">
+               <input type="button" class="btn ml-3" value="MR">
+               <input type="button" class="btn ml-3" value="M+">
+               <input type="button" class="btn ml-3" value="M-">
+               <input type="button" class="btn ml-3" value="MS"><br>
+               <input type="button" class="btn ml-3" value="2nd">
+               <input type="button" class="btn ml-3" value="π" id="pi">
+               <input type="button" class="btn ml-3" value="e" id="e" >
+               <input type="button" class="btn ml-3" value="CE" id="clear">
+               <input type="button" class="btn ml-3" value="CLR" id="back"><br>
+               <input type="button" class="btn ml-3" value="x^2" id="pow" >
+               <input type="button" class="btn ml-3" value="1/x" id="xt" >
+               <input type="button" class="btn ml-3" value="|x|" id="x" >
+               <input type="button" class="btn ml-3" value="exp" id="exp" >
+               <input type="button" class="btn ml-3" value="mod" onclick="document.scientific.display.value+='%'" ><br>
+               <input type="button" class="btn ml-3" value="2√x" id="sqrt" >
+               <input type="button" class="btn ml-3" value="(" id="openpa" >
+               <input type="button" class="btn ml-3" value=")" id="closepa" >
+               <input type="button" class="btn ml-3" value="n!" id="fact" >
+               <input type="button" class="btn ml-3" value="÷" onclick="document.scientific.display.value+='/'"><br>
+               <input type="button" class="btn ml-3" value="x^y" id="xy" >
+               <input type="button" class="btn ml-3" value="7" id="seven" >
+               <input type="button" class="btn ml-3" value="8" id="eight" >
+               <input type="button" class="btn ml-3" value="9" id="nine" >
+               <input type="button" class="btn ml-3" value="×" onclick="document.scientific.display.value+='*'"><br>
+               <input type="button" class="btn ml-3" value="10^x" id="x10"  >
+               <input type="button" class="btn ml-3" value="4" id="four">
+               <input type="button" class="btn ml-3" value="5" id="five" >
+               <input type="button" class="btn ml-3" value="6" id="six" >
+               <input type="button" class="btn ml-3" value="-" onclick="document.scientific.display.value+='-'"><br>
+               <input type="button" class="btn ml-3" value="log" id="log" >
+               <input type="button" class="btn ml-3" value="1" id="one">
+               <input type="button" class="btn ml-3" value="2" id="two">
+               <input type="button" class="btn ml-3" value="3" id="three" >
+               <input type="button" class="btn ml-3" value="+" id="plu" onclick="document.scientific.display.value+='+'"><br>
+               <input type="button" class="btn ml-3" value="In" id="in">
+               <input type="button" class="btn ml-3" value="+/-">
+               <input type="button" class="btn ml-3" value="0" id="zero" >
+               <input type="button" class="btn ml-3" value="." onclick="document.scientific.display.value+='.'">
+               <input type="button" id="eql" class="btn ml-3" value="=" onclick="document.scientific.display.value = eval(scientific.display.value)">
+           </form>
+       </div>
+   </div>   
+</body>
+<script src="JSandTsFile/typescript.js"></script> 
+</html>
